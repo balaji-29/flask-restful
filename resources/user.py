@@ -22,7 +22,7 @@ def send_simple_message(to, subject, body):
             "from": f"Balaji AK <mailgun@{domain}>",
             "to": [to],
             "subject": subject,
-            "text": body
+            "text": body,
         },
     )
 
