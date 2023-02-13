@@ -25,7 +25,7 @@ def create_app(db_url=None):
     connection = redis.from_url(
         os.getenv("REDIS_URL")
     )
-    app.Queue=Queue("emails", connection=connection)
+    app.queue = Queue("emails", connection=connection)
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores REST API"
     app.config["API_VERSION"] = "v1"
