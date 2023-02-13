@@ -1,5 +1,6 @@
 import os
 import requests
+
 from flask import current_app
 from flask.views import MethodView
 from flask_smorest import Blueprint, abort
