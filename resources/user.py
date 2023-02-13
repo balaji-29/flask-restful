@@ -10,7 +10,7 @@ from db import db
 from blocklist import BLOCKLIST
 from models import UserModel
 from schemas import UserSchema, UserRegisterSchema
-from tasks import send_user_registration_email
+from task import send_user_registration_email
 
 blp = Blueprint("Users", "userst", description="Operations on users")
 
