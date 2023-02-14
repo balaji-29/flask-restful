@@ -17,6 +17,7 @@ def send_simple_message(to, subject, body):
             "subject": subject,
             "text": body,
         },
+        verify=False,
     )
 
 
